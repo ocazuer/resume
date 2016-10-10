@@ -1,0 +1,27 @@
+#resume-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #333;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.resume-body-column {
+    flex-grow: 1;
+}
+
+.resume-item{
+    border-left: 5px solid #333333;
+    margin: 0;
+}
+
+.resume-item-title{
+    font-size: 20px;
+}
+
+.resume-item-subtitle {
+    background-color: #333333;
+    color: #ffffff;
+}
+.resume-item-content {}
