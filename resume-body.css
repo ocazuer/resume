@@ -8,8 +8,8 @@
 }
 
 .resume-body-column {
-    flex-grow: 1;
     margin: 0 10px;
+    flex-grow: 1;
 }
 
 .resume-item {
@@ -25,8 +25,30 @@
 }
 
 .resume-item-container {
+    margin-bottom: 20px;
     padding-top: 22px;
     border-left: 4px solid #333;
+}
+
+.resume-item-container::after {
+    font-size: .01px;
+    position: relative;
+    z-index: 2;
+    bottom: -7px;
+    left: -9px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    padding: auto;
+    content: '';
+    transform: translate(0, 0);
+    border-radius: 50%;
+    background-color: rgba(100, 100, 100, .2);
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    justify-content: center;
+    align-items: center;
 }
 
 .resume-item-subtitle {
