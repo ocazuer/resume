@@ -19,12 +19,11 @@ body {
 }
 
 #resume-body {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     color: #333;
     background-color: #fff;
-
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -40,13 +39,14 @@ body {
         flex-direction: column;
     }
     .resume-body-column {
-        margin: 0px;
+        margin: 0;
     }
 }
 
 @media (max-width: 480px) {
     #resume-container {
         width: 100%;
+        margin: 0;
     }
 }
 
@@ -58,7 +58,7 @@ body {
         flex-direction: row;
     }
     .resume-body-column {
-        margin: 0px 10px;
+        margin: 0 10px;
     }
 }
 
