@@ -5,5 +5,32 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+}
+
+#resume-header-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#resume-header-QR {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+#resume-header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume-header-h1 {
+    font-size: 3em;
+}
+#resume-header-h2 {
+    font-size: 1em;
 }
