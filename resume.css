@@ -12,12 +12,6 @@ body {
     justify-content: flex-start;
 }
 
-#resume-header {
-    padding: 20px;
-    color: #fff;
-    background-color: #333;
-}
-
 #resume-body {
     display: flex;
     flex-direction: column;
