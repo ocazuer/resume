@@ -5,9 +5,6 @@
     #resume-body {
         flex-direction: column;
     }
-    .resume-body-column {
-        margin: 0;
-    }
     #resume-header-QR{
         display: none;
     }
@@ -38,9 +35,6 @@
     #resume-body {
         flex-direction: column;
     }
-    .resume-body-column {
-        margin: 0 10px;
-    }
 }
 
 @media (min-width: 980px) {
@@ -49,9 +43,6 @@
     }
     #resume-body {
         flex-direction: row;
-    }
-    .resume-body-column {
-        margin: 0 10px;
     }
 }
 
