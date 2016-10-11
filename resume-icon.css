@@ -33,3 +33,7 @@
 .sub-other::before {
     content: '\f1e6'
 }
+
+.sub-education::before {
+    content: '\f19d'
+}

@@ -65,13 +65,28 @@
     #body{
         margin: 0px;
         padding: 0px;
+        background: white;
+    }
+    #resume-header{
+        padding-left:  50px;
+        padding-right: 60px;
+    }
+    #resume-header-QR{
+        display: block;
     }
     #resume-container {
-        width: 860px;
+        width: 900px;
         margin: 0px;
         border: 0px;
     }
     #resume-body {
         flex-direction: row;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 500px;
+    }
+    #PDFbutton{
+        display: none;
     }
 }

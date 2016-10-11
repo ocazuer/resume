@@ -19,6 +19,8 @@
     width: 100px;
     height: 100px;
     background-color: #ffffff;
+    padding: 0px;
+    margin-right: 10px;
 }
 
 #resume-header-right {
