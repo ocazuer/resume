@@ -12,65 +12,51 @@ body {
     justify-content: flex-start;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active{
-    color: white;
+a:link, a:visited, a:hover, a:active {
     text-decoration: none;
+    color: white;
 }
 
-li{
+li {
     line-height: 1.2em;
 }
 
 .fa-li {
-    top: 0.07em !important;
-
+    top: .07em !important;
 }
 
 ul {
-    margin-bottom: 8px !important;
     margin-top: 8px !important;
+    margin-bottom: 8px !important;
 }
 
 #PDFbutton {
-    box-shadow: rgba(0, 0, 0, .117647) 0 6px 10px 0, rgba(0, 0, 0, .117647) 0 1px 10px 0;
-    border-radius: 20px;
-
-    height: 30px;
-    width: 100px;
-    padding-left: 20px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
     position: fixed;
+    z-index: 100;
     right: -50px;
     bottom: 15px;
-
-    background-color: #eeeeee;
-    z-index: 100;
-
-    color: #333333;
-
-    opacity: 0.8;
-    transition: opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 30px;
+    padding-left: 20px;
+    transition: opacity .4s ease;
+    transition: background-color .4s ease;
+    transition: color .4s liner;
+    opacity: .8;
+    color: #333;
+    border-radius: 20px;
+    background-color: #eee;
+    box-shadow: rgba(0, 0, 0, .117647) 0 6px 10px 0, rgba(0, 0, 0, .117647) 0 1px 10px 0;
+    justify-content: center;
+    align-items: flex-start;
     /*transition: color 0.5s linear;*/
-
 }
 
-#PDFbutton:link,
-#PDFbutton:visited{
-    color: rgba(100,100,100,0.5) !important;
-}
-#PDFbutton:hover,
-#PDFbutton:active{
+#PDFbutton:hover, #PDFbutton:active {
     opacity: 1;
-    color: #333331 !important;
-    /*right: -30px;*/
+    color: #fff;
+    background-color: #333;
 }
 
 .PDFbutton-h1 {
