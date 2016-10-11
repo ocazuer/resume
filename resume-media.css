@@ -35,6 +35,15 @@
         width: 100%;
         margin: 0;
     }
+    #resume-header {
+        height: 200px;
+    }
+    #resume-header-h1{
+        font-size: 60px;
+    }
+    #resume-header-h2{
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
