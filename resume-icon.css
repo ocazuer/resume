@@ -1,0 +1,35 @@
+.education::before {
+    content: '\f02d'
+}
+
+.language::before {
+    content: '\f086'
+}
+
+.sub-language::before {
+    content: '\f0ac'
+}
+
+.experience::before{
+    content: '\f085'
+}
+
+.sub-experience::before {
+    content: '\f07c'
+}
+
+.skill::before{
+    content: '\f13d'
+}
+
+.sub-front::before {
+    content: '\f108'
+}
+
+.sub-back::before {
+    content: '\f0c2'
+}
+
+.sub-other::before {
+    content: '\f1e6'
+}

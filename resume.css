@@ -23,3 +23,13 @@ a:active{
 li{
     line-height: 1.2em;
 }
+
+.fa-li {
+    top: 0.07em !important;
+
+}
+
+ul {
+    margin-bottom: 8px !important;
+    margin-top: 8px !important;
+}
