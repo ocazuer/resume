@@ -33,3 +33,46 @@ ul {
     margin-bottom: 8px !important;
     margin-top: 8px !important;
 }
+
+#PDFbutton {
+    box-shadow: rgba(0, 0, 0, .117647) 0 6px 10px 0, rgba(0, 0, 0, .117647) 0 1px 10px 0;
+    border-radius: 20px;
+
+    height: 30px;
+    width: 100px;
+    padding-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: fixed;
+    right: -50px;
+    bottom: 15px;
+
+    background-color: #eeeeee;
+    z-index: 100;
+
+    color: #333333;
+
+    opacity: 0.8;
+    transition: opacity 0.4s ease;
+    /*transition: color 0.5s linear;*/
+
+}
+
+#PDFbutton:link,
+#PDFbutton:visited{
+    color: rgba(100,100,100,0.5) !important;
+}
+#PDFbutton:hover,
+#PDFbutton:active{
+    opacity: 1;
+    color: #333331 !important;
+    /*right: -30px;*/
+}
+
+.PDFbutton-h1 {
+    font-size: 16px;
+}
