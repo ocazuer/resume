@@ -20,7 +20,7 @@
     font-size: 20px;
     font-weight: bold;
     display: inline-block;
-    margin-bottom: -22px;
+    margin-bottom: -18px;
     padding-left: 10px;
     align-items: center;
 }
@@ -54,8 +54,8 @@
 
 .resume-item-subtitle {
     display: flex;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    /*margin-top: 5px;
+    margin-bottom: 5px;*/
     margin-left: -1px;
     align-items: center;
 }
@@ -64,7 +64,7 @@
     margin-left: -20px;
     padding-left: 26px;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #333;
     flex-grow: 1;
     line-height: 25px;
@@ -111,6 +111,7 @@
     margin-right: 5px;
     content: '\f02e';
     background-color: #333333;
+    font-weight: normal;
 }
 
 .resume-item-subtitle::before {
@@ -125,10 +126,10 @@
 
 .resume-item-content {
     padding-left: 26px;
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
 }
 ul {
-    font-size: 1em;
+    /*font-size: 1em !important;*/
 }
 
 strong {

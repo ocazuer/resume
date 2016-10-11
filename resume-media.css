@@ -13,7 +13,7 @@
     }
 }
 
-@media (max-width: 560px) {
+/*@media (max-width: 560px) {
     #resume-container {
         width: 480px;
     }
@@ -28,14 +28,17 @@
     #resume-header-right {
         order: 1;
     }
-}
+}*/
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
     #resume-container {
         width: 100%;
         margin: 0;
     }
     #resume-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         height: 200px;
     }
     #resume-header-h1{
@@ -43,6 +46,12 @@
     }
     #resume-header-h2{
         font-size: 20px;
+    }
+    #resume-header-left {
+        order: 2;
+    }
+    #resume-header-right {
+        order: 1;
     }
 }
 
@@ -58,42 +67,112 @@
 @media (min-width: 980px) {
     #resume-container {
         width: 900px;
-    }
-    #resume-body {
         flex-direction: row;
     }
-}
-
-@media (min-width: 1200px) {
-    #resume-container {
-        width: 1000px;
+    #resume-body {
+        flex-direction: column;
+    }
+    #resume-header {
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+        width: 260px;
+        justify-content: flex-start;
+    }
+    #resume-header-right {
+        order: 1;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    #resume-header-left {
+        order: 2;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Verdana', Georgia, 'Microsoft YaHei', '微软雅黑', STXihei, '华文细黑', serif;
+        margin-bottom: 60px;
+    }
+    #resume-header-left-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #resume-header-h1 {
+        font-size: 56px;
+        padding-bottom: 12px;
+    }
+    #resume-header-h2 {
+        font-size: 18px;
+    }
+    #resume-header-QR {
+        order: 2;
+        width: 130px;
+        height: 130px;
+        margin-top:20px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
 @media print {
-    #body{
-        margin: 0px;
-        padding: 0px;
-        background: white;
-    }
-    #resume-header{
-        padding-left:  50px;
-        padding-right: 60px;
-    }
-    #resume-header-QR{
-        display: block;
-    }
+/*@media (min-width: 980px) {*/
     #resume-container {
-        width: 900px;
+        width: 1100px;
         margin: 0px;
-        border: 0px;
+        flex-direction: row;
     }
     #resume-body {
-        flex-direction: row;
-        padding-top: 40px;
-        padding-right: 40px;
-        padding-left: 40px;
-        padding-bottom: 500px;
+        flex-direction: column;
+    }
+    #resume-header {
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+        width: 360px;
+        justify-content: flex-start;
+    }
+    #resume-header-right {
+        order: 1;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    #resume-header-left {
+        order: 2;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Verdana', Georgia, 'Microsoft YaHei', '微软雅黑', STXihei, '华文细黑', serif;
+        margin-bottom: 60px;
+    }
+    #resume-header-left-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #resume-header-h1 {
+        font-size: 56px;
+        padding-bottom: 12px;
+    }
+    #resume-header-h2 {
+        font-size: 18px;
+    }
+    #resume-header-QR {
+        order: 2;
+        width: 130px;
+        height: 130px;
+        margin-top:20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #resume-header-info{
+        display: block;
+        text-align: center;
+    }
+    #resume-header-info a{
+        font-size: 0.5em;
+        color: skyblue;
     }
     #PDFbutton{
         display: none;
