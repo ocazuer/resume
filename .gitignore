@@ -2,6 +2,8 @@
 migrations/
 DS_store
 __pycache__/
+test.html
+test.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
