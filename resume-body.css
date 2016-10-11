@@ -118,3 +118,8 @@
 .resume-item-content {
     padding-left: 26px;
 }
+
+strong {
+    color: #2e6f9e;
+    padding: 0 2px;
+}
