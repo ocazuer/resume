@@ -1,6 +1,6 @@
 @media (max-width: 767px) {
     #resume-container {
-        width: 480px;
+        width: 550px;
     }
     #resume-body {
         flex-direction: column;
@@ -8,12 +8,14 @@
     #resume-header-QR{
         display: none;
     }
+    #resume-header{
+        padding: 20px;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
     #resume-container {
-        width: 100%;
-        margin: 0;
+        width: 480px;
     }
     #resume-header{
         display: flex;
@@ -25,6 +27,13 @@
     }
     #resume-header-right {
         order: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    #resume-container {
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -49,5 +58,17 @@
 @media (min-width: 1200px) {
     #resume-container {
         width: 1000px;
+    }
+}
+
+@media print {
+    #body{
+        background-color: red;
+    }
+    #resume-container {
+        width: 900px;
+    }
+    #resume-body {
+        flex-direction: row;
     }
 }
