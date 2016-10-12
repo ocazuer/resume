@@ -4,6 +4,7 @@
     }
     #resume-body {
         flex-direction: column;
+        padding: 2px;
     }
     #resume-header-QR{
         display: none;
