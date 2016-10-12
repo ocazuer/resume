@@ -1,4 +1,5 @@
 <!doctyle html>
+<!--v1.0-->
 <html>
 
 <head>
@@ -13,9 +14,10 @@
 
 <body>
 
-<a>
+<a href="#">
     <div id="PDFbutton">
-        PDF
+        <div class="PDFbutton-h1">PDF</div>
+        <!--<div>下载</div>-->
     </div>
 </a>
 
@@ -23,13 +25,21 @@
 
 <div id="resume-header">
     <div id="resume-header-left">
-        <img id="resume-header-QR" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/QRcode_image.svg/330px-QRcode_image.svg.png">
-        <ul class="fa-ul">
-            <li><i class="fa-li fa fa-envelope"></i>email@email.com</li>
-            <li><i class="fa-li fa fa-weixin"></i>wechat</li>
-            <li><i class="fa-li fa fa-weibo"></i>weibo</li>
-            <li><i class="fa-li fa fa-github"></i>https://github.com/github</li>
-        </ul>
+        <span id="resume-header-left-container">
+            <img id="resume-header-QR" src="img/wechat-QR-0.png">
+            <ul class="fa-ul">
+                <li class="resume-header-list"><i class="fa-li fa fa-weixin"></i>wechat</li>
+                <li class="resume-header-list"><i class="fa-li fa fa-phone"></i>137<span>12345</span>678</li>
+                <li class="resume-header-list"><i class="fa-li fa fa-envelope"></i>email@email.com</li>
+                <!--<li><i class="fa-li fa fa-weibo"></i>weibo</li>-->
+                <li class="resume-header-list"><i class="fa-li fa fa-github"></i><a href="https://github.com/">github</a></li>
+            </ul>
+        </span>
+        <div id="resume-header-info">
+            在线简历
+            <br>
+            <a href="http://ocazuer.com/reusume/pdf">ocazuer.com/resume/pdf</a>
+        </div>
     </div>
     <div id="resume-header-right">
         <div id="resume-header-h1">我爱罗</div>
@@ -40,40 +50,46 @@
 <div id="resume-body">
     <div class="resume-body-column">
         <div class="resume-item">
-            <div class="resume-item-title">title</div>
+            <div class="resume-item-title education">教育经历</div>
             <div class="resume-item-container">
-                <div class="resume-item-subtitle">
-                    <div class="resume-item-subtitle-content">subtitle</div>
+                <div class="resume-item-subtitle sub-education">
+                    <div class="resume-item-subtitle-content">2013-2017</div>
                 </div>
                 <div class="resume-item-content">
-                    content
+                    <div class="education-h1">中山大学</div>
+                    <div class="education-h2">核工程与技术学院</div>
+                </div>
+            </div>
+        </div>
+        <div class="resume-item">
+            <div class="resume-item-title language">语言水平</div>
+            <div class="resume-item-container">
+                <div class="resume-item-subtitle sub-language">
+                    <div class="resume-item-subtitle-content">英语</div>
+                </div>
+                <div class="resume-item-content">
                     <ul class="fa-ul">
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
+                        <li><i class="fa-li fa fa-pencil"></i>CET-6</li>
+                        <li><i class="fa-li fa fa-pencil"></i>能流畅阅读英文相关文档、书籍和其他专业资料</li>
+                        <li><i class="fa-li fa fa-pencil"></i>能流畅观看英文 MOOC 视频</li>
                     </ul>
                 </div>
-                <div class="resume-item-subtitle">
-                    <div class="resume-item-subtitle-content">subtitle</div>
+                <div class="resume-item-subtitle sub-language">
+                    <div class="resume-item-subtitle-content">法语</div>
                 </div>
                 <div class="resume-item-content">
-                    content
                     <ul class="fa-ul">
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
+                        <li><i class="fa-li fa fa-pencil"></i>能进行流畅的书面或口头沟通</li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="resume-body-column">
         <div class="resume-item">
-            <div class="resume-item-title">title</div>
+            <div class="resume-item-title experience">项目经验</div>
             <div class="resume-item-container">
-                <div class="resume-item-subtitle">
+                <div class="resume-item-subtitle sub-experience">
                     <div class="resume-item-subtitle-content">
-                        subtitle
+                        论坛
                         <span>
                             <a class="resume-item-button" href="#">demo</a>
                             <a class="resume-item-button" href="#">源码</a>
@@ -81,22 +97,96 @@
                     </div>
                 </div>
                 <div class="resume-item-content">
-                    content
+                    一个对 v2ex.com 功能与样式的仿制品，实现了一个论坛的主要功能。
                     <ul class="fa-ul">
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
+                        <li><i class="fa-li fa fa-star"></i>后端基于<strong>Flask</strong>进行构建，使用了<strong>SQLAlchemy</strong>搭建关系数据库</li>
+                        <li><i class="fa-li fa fa-star"></i>前端使用原生 CSS 构建样式、<strong>Jinja2</strong>模板引擎进行渲染</li>
                     </ul>
                 </div>
-                <div class="resume-item-subtitle">
-                    <div class="resume-item-subtitle-content">subtitle</div>
+                <div class="resume-item-subtitle sub-experience">
+                    <div class="resume-item-subtitle-content">
+                        简历
+                        <span>
+                            <a class="resume-item-button" href="#">demo</a>
+                            <a class="resume-item-button" href="#">源码</a>
+                        </span>
+                    </div>
                 </div>
                 <div class="resume-item-content">
-                    content
                     <ul class="fa-ul">
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
-                        <li><i class="fa-li fa fa-circle"></i>list-item</li>
+                        <li><i class="fa-li fa fa-star"></i>你正在看的这份简历</li>
+                    </ul>
+                </div>
+                <div class="resume-item-subtitle  sub-experience">
+                    <div class="resume-item-subtitle-content">
+                        个人项目-爬虫
+                        <span>
+                            <!--<a class="resume-item-button" href="#">demo</a>-->
+                            <a class="resume-item-button" href="#">源码</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="resume-item-content">
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-star"></i>使用<strong>socket</strong>拉取数据，并针对特定的反爬虫机制进行修改</li>
+                        <li><i class="fa-li fa fa-star"></i>使用<strong>lxml</strong>对网页进行分析并提取数据</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="resume-body-column">
+        <div class="resume-item">
+            <div class="resume-item-title skill">技能</div>
+            <div class="resume-item-container">
+                <div class="resume-item-subtitle sub-back">
+                    <div class="resume-item-subtitle-content">web 后端</div>
+                </div>
+                <div class="resume-item-content">
+                    <strong>python</strong>
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-cog"></i>熟悉<strong>python</strong>后端语言</li>
+                    </ul>
+                    <strong>Flask</strong>
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-cog"></i>能够使用<strong>Flask</strong>搭建复杂的服务器</li>
+                        <li><i class="fa-li fa fa-cog"></i>熟悉<strong>SQLAlchemy</strong></li>
+                        <li><i class="fa-li fa fa-cog"></i>使用<strong>Blueprint</strong>创建路由并</li>
+                        <li><i class="fa-li fa fa-cog"></i>能够使用<strong>Jinja2</strong>创建网页模板</li>
+                    </ul>
+                    <strong>SQL</strong>
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-cog"></i>熟悉<strong>SQLlite</strong>和<strong>Mysql</strong>的基本操作</li>
+                    </ul>
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-cog"></i>能够使用<strong>apache</strong>/<strong>gunicorn</strong>部署网络服务器</li>
+                    </ul>
+                </div>
+                <div class="resume-item-subtitle sub-front">
+                    <div class="resume-item-subtitle-content">web 前端</div>
+                </div>
+                <div class="resume-item-content">
+                    HTML / CSS
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-cog"></i>熟练掌握原生 HTML、CSS 开发，能根据需求快速搭建前端页面</li>
+                        <li><i class="fa-li fa fa-cog"></i>熟悉已标准化的 HTML5 / CSS3 新特性</li>
+                    </ul>
+                    <strong>jQuery</strong>
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-cog"></i>能为网站提供<strong>AJAX</strong>交互</li>
+                        <li><i class="fa-li fa fa-cog"></i>能使用 jQuery 对 DOM 进行选择和处理</li>
+                    </ul>
+                </div>
+                <div class="resume-item-subtitle sub-other">
+                    <div class="resume-item-subtitle-content">其他</div>
+                </div>
+                <div class="resume-item-content">
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-cog"></i>熟悉<strong>Linux</strong>开发环境、常用命令与配置</li>
+                        <li><i class="fa-li fa fa-cog"></i>了解基本的 web 安全知识（<strong>sq</strong>l注入、<strong>Xss</strong>攻击、命令注入、<strong>CSRF</strong>攻击等）</li>
+                        <li><i class="fa-li fa fa-cog"></i>熟练使用<strong>Git</strong>进行版本控制，能够通过命令行和<strong>souretree</strong>进行操作</li>
+                        <li><i class="fa-li fa fa-cog"></i>能够使用<strong>LaTex</strong>和<strong>Markdown</strong>写论文或文档</li>
                     </ul>
                 </div>
             </div>
