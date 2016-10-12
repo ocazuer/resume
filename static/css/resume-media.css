@@ -124,12 +124,13 @@
     }
     #resume-body {
         flex-direction: column;
+        width: 750px;
     }
     #resume-header {
         flex-direction: column;
         padding: 0;
         height: auto;
-        width: 360px;
+        width: 350px;
         justify-content: flex-start;
     }
     #resume-header-right {
