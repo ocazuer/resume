@@ -161,10 +161,11 @@
         font-size: 18px;
     }
     #resume-header-QR {
+        display: block;
         order: 2;
         width: 130px;
         height: 130px;
-        margin-top:20px;
+        margin-top:50px;
         margin-right: auto;
         margin-left: auto;
     }
