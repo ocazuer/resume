@@ -152,6 +152,7 @@
     #resume-header-left-container{
         display: flex;
         flex-direction: column;
+        font-size: 1.2em;
     }
     #resume-header-h1 {
         font-size: 56px;
@@ -163,8 +164,8 @@
     #resume-header-QR {
         display: block;
         order: 2;
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
         margin-top:50px;
         margin-right: auto;
         margin-left: auto;
