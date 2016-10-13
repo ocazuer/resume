@@ -39,15 +39,15 @@ ul {
     display: flex;
     flex-direction: column;
     width: 100px;
-    height: 30px;
+    height: 40px;
     padding-left: 20px;
     transition: opacity .4s ease;
     transition: background-color .4s ease;
     transition: color .4s liner;
     opacity: .8;
-    color: #333;
+    color: #fff;
     border-radius: 20px;
-    background-color: #eee;
+    background-color: #333333;
     box-shadow: rgba(0, 0, 0, .117647) 0 6px 10px 0, rgba(0, 0, 0, .117647) 0 1px 10px 0;
     justify-content: center;
     align-items: flex-start;
@@ -57,7 +57,7 @@ ul {
 #PDFbutton:hover, #PDFbutton:active {
     opacity: 1;
     color: #fff;
-    background-color: #333;
+    background-color: #2e6f9e;
 }
 
 .PDFbutton-h1 {
