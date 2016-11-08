@@ -76,9 +76,9 @@
     background-color: #f0f0f0;
     color: #333333 !important;
     margin-right: 5px;
-    padding: 2 8px;
+    padding: 2px 8px;
     border-radius: 3px;
-    font-size: 0.8em;
+    font-size: 0.6em;
     transition: background-color 0.5s;
     transition: color 0.3s;
 }
